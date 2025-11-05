@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MotoGP Fan</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Situs tema MotoGP - berita, rider, jadwal balap dan galeri." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="/Image/motogp9058.jpg" alt="MotoGP logo" class="logo">
+        <div>
+          <h1>MotoGP Fan</h1>
+          <small>Speed. Passion. Glory.</small>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#riders">Riders</a>
+        <a href="#schedule">Jadwal</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact" class="btn-secondary">Kontak</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Buka menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h2>Adrenaline of MotoGP — Musim 2025</h2>
+        <p>Ikuti update balapan, profil rider, dan highlights setiap seri. Tetap terhubung dengan kecepatan.</p>
+        <div class="hero-cta">
+          <a href="#riders" class="btn-primary">Lihat Riders</a>
+          <a href="#schedule" class="btn-outline">Lihat Jadwal</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="riders" class="section">
+      <div class="container">
+        <h3 class="section-title">Riders Unggulan</h3>
+        <p class="section-sub">Profil singkat beberapa rider teratas musim ini.</p>
+
+        <div class="rider-grid">
+          <article class="rider-card">
+            <img src="/Image/valentino-rossi.avif" alt="Rider 1">
+            <div class="rider-body">
+              <h4>Valentino Rossi</h4>
+              <p class="meta">Tim: Monster Energy Yamaha MotoGP • Nomor: 46</p>
+              <p>Rider veteran dengan banyak podium—ahli di trek kering dan tikungan cepat.</p>
+            </div>
+          </article>
+
+          <article class="rider-card">
+            <img src="/Image/99-jorge-lorenzo-esplg5_7806.gallery_full_top_lg.jpg" alt="Rider 2">
+            <div class="rider-body">
+              <h4>Jorge Lorenzo</h4>
+              <p class="meta">Tim: Honda Racing Corporation (HRC) • Nomor: 99</p>
+              <p>Pendatang baru yang agresif, kuat di start dan strategi pit yang cerdik.</p>
+            </div>
+          </article>
+
+          <article class="rider-card">
+            <img src="/Image/marc-marquez-ducati-team.jpg" alt="Rider 3">
+            <div class="rider-body">
+              <h4>Marq Marquez</h4>
+              <p class="meta">Tim: Ducati Lenovo Team • Nomor: 93</p>
+              <p>Kecepatan luar biasa di trek lurus, lawan sulit dalam sprint akhir.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section alt">
+      <div class="container">
+        <h3 class="section-title">Jadwal Seri Terdekat</h3>
+        <div class="schedule-list">
+          <div class="event">
+            <div class="date">12 Oct 2025</div>
+            <div class="event-body">
+              <h4>Grand Prix Indonesia</h4>
+              <p>Sirkuit Mandalika • Lombok</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="date">26 Oct 2025</div>
+            <div class="event-body">
+              <h4>Grand Prix Malaysia</h4>
+              <p>Sirkuit Sepang • Sepang</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="date">09 Nov 2025</div>
+            <div class="event-body">
+              <h4>Grand Prix Australia</h4>
+              <p>Sirkuit Philip Island • Victoria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <h3 class="section-title">Galeri</h3>
+        <div class="gallery-grid">
+          <img src="/Image/pertamina-mandalika-international-street-circuit-lombok-indonesia_1048944-4021329.jpg" alt="Galeri 1">
+          <img src="/Image/sportpedia-profil-sepang-international-circuit-2xVDiYQaIj.jpg" alt="Galeri 2">
+          <img src="/Image/Phillip-Island-Grand-Prix-Circuit.-Photo-courtesy-WorldSBK._1668705570.jpg" alt="Galeri 3">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <div>
+          <h3 class="section-title">Kontak & Newsletter</h3>
+          <p>Masukkan email untuk mendapatkan update langsung ke inbox Anda.</p>
+        </div>
+
+        <form class="newsletter" onsubmit="event.preventDefault(); alert('Terima kasih! Anda sudah terdaftar.');">
+          <input type="email" placeholder="email@anda.com" required>
+          <button type="submit" class="btn-primary">Daftar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> MotoGP Fan — Created By M. Zelqy Adrian</p>
+      <small>©2025 all right reserved </small>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JS for year and mobile menu toggle
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
