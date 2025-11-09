@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontak & Ulasan - Wisata Daerahku</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50">
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">Wonderful Lombok</h1>
+      <nav class="space-x-3">
+        <a href="index.html">Beranda</a>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold mb-4">Kontak & Ulasan Pengunjung</h2>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="card p-4">
+          <h5>Kontak Pengelola</h5>
+          <p>Alamat: Jl. Catur Warga No.14, Mataram Bar., Kec. Selaparang, Kota Mataram, Nusa Tenggara Bar. 83126, Kota Mataram</p>
+          <p>Email: 1million.wls@gmail.com</p>
+          <p>Telepon: 081917015510</p>
+        </div>
+
+        <div class="card mt-4 p-4">
+          <h5>Kirim Ulasan</h5>
+          <form id="review-form" novalidate>
+            <div class="mb-2">
+              <label>Nama</label>
+              <input id="input-name" class="form-control" required>
+            </div>
+            <div class="mb-2">
+              <label>Email</label>
+              <input id="input-email" type="email" class="form-control" required>
+            </div>
+            <div class="mb-2">
+              <label>Pesan</label>
+              <textarea id="input-message" class="form-control" rows="3" required></textarea>
+            </div>
+            <div class="mb-2">
+              <label>Rating (1-5)</label>
+              <select id="input-rating" class="form-select" required>
+                <option value="">Pilih</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" type="submit">Kirim Ulasan</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <h5>Ulasan Terakhir</h5>
+        <div id="reviews-list" class="space-y-3">
+          <!-- Ulasan muncul di sini -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white border-t">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <small>&copy; 2025 Wisata Daerahku</small>
+      <div class="space-x-2">
+        <a href="https://www.instagram.com/wonderfullombok/?__pwa=1">Instagram</a>
+        <a href="https://web.facebook.com/wonderfullombok">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

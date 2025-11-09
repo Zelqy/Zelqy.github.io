@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galeri - Wisata Daerahku</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50">
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">Wonderful Lombok</h1>
+      <nav class="space-x-3">
+        <a href="index.html">Beranda</a>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold mb-4">Galeri Foto</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery-grid">
+      <!-- 9 foto -->
+      <div class="gallery-item overflow-hidden rounded"><img src="assets/img/desa-sade-lombok-tempat-belajar-dan-melihat-tradisi-asli-sasak-nXumr8jJai.jpg" alt=""></div>
+      <div class="gallery-item overflow-hidden rounded"><img src="assets/img/pink beach.jpg" alt=""></div>
+      <div class="gallery-item overflow-hidden rounded"><img src="assets/img/Sendang-Gile-and-Tiu-Kelep-waterfalls-in-Senaru-Lombok-8.webp" alt=""></div>
+      <div class="gallery-item overflow-hidden rounded"><img src="assets/img/bukit-merese2.jpg" alt=""></div>
+      <div class="gallery-item overflow-hidden rounded"><img src="assets/img/taman-mayura-temple-sign-lombok-indonesia-buddhist-44249552.webp" alt=""></div>
+      <div class="gallery-item overflow-hidden rounded"><img src="assets/img/arsi.webp" alt=""></div>
+      <div class="gallery-item overflow-hidden rounded hidden"><img src="assets/img/20428-objek-wisata-sesaot-lombok-instagramatjustdewa.jpg" alt=""></div>
+      <div class="gallery-item overflow-hidden rounded hidden"><img src="assets/img/1558681567_Sembalun.jpg" alt=""></div>
+      <div class="gallery-item overflow-hidden rounded hidden"><img src="assets/img/Rinjani-Lake-Lombok.jpg" alt=""></div>
+    </div>
+
+    <div class="mt-4">
+      <button id="toggle-gallery" class="btn btn-primary">Tampilkan Semua</button>
+    </div>
+  </main>
+
+  <footer class="bg-white border-t">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <small>&copy; 2025 Wisata Daerahku</small>
+      <div class="space-x-2">
+        <a href="https://www.instagram.com/wonderfullombok/?__pwa=1">Instagram</a>
+        <a href="https://web.facebook.com/wonderfullombok">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
