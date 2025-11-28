@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello — Nama | NIM | Prodi</title>
+  <style>
+    /* Simple, clean styling. Edit the values below to customize. */
+    :root{
+      --bg1: #0f172a;
+      --bg2: #0b3d91;
+      --card: rgba(255,255,255,0.06);
+      --accent: #60a5fa;
+      --glass: rgba(255,255,255,0.06);
+      --radius: 16px;
+      --maxw: 720px;
+      --gap: 18px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    html,body{height:100%;margin:0}
+    body{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg,var(--bg1),var(--bg2));
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:24px;
+    }
+
+    .card{
+      width:100%;
+      max-width:var(--maxw);
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:0 10px 30px rgba(2,6,23,0.6);
+      backdrop-filter: blur(6px) saturate(120%);
+      border:1px solid rgba(255,255,255,0.06);
+    }
+
+    .header{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    .logo{
+      width:64px;height:64px;
+      background:linear-gradient(135deg,var(--accent), #3b82f6);
+      border-radius:12px;
+      display:grid;place-items:center;font-weight:700;font-size:20px;color:#04254a;
+      box-shadow:0 6px 18px rgba(11,40,94,0.35);
+    }
+
+    h1{
+      margin:0;font-size:26px;line-height:1.05;
+      letter-spacing:0.2px
+    }
+
+    p.lead{margin:10px 0 18px;color:rgba(230,238,248,0.86)}
+
+    /* Combined single-line display */
+    .combined{
+      background:var(--glass);
+      padding:14px 16px;border-radius:12px;
+      font-weight:600;
+      display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+      border:1px solid rgba(255,255,255,0.04);
+    }
+
+    .tag{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:13px}
+
+    .meta{color:rgba(230,238,248,0.85);font-weight:700}
+
+    .hint{margin-top:14px;color:rgba(230,238,248,0.6);font-size:13px}
+
+    /* responsive */
+    @media (max-width:480px){
+      h1{font-size:20px}
+      .logo{width:52px;height:52px;font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <!--
+    EDIT INSTRUCTIONS:
+    - Untuk mengubah Nama, NIM, dan Prodi, cari elemen <span id="name">, <span id="nim">, <span id="prodi"> di bawah dan gantikan teksnya.
+    - Atau ubah langsung teks pada elemen dengan id="combined-text".
+  -->
+
+  <main class="card" role="main">
+    <div class="header">
+      <div class="logo">HW</div>
+      <div>
+        <h1>Hello World</h1>
+        <p class="lead">Hanya halaman sederhana yang menampilkan Hello World dan satu baris berisi Nama, NIM, dan Prodi Aja Ya Gais Ya.</p>
+      </div>
+    </div>
+
+    <!-- Combined single-line (dalam jadi satu) -->
+    <div style="margin-top:18px">
+      <div class="combined" aria-live="polite">
+        <span class="tag">👋</span>
+        <div id="combined-text" class="meta">Hello World — Nama: <span id="name">M. ZELQY ADRIAN</span> | NIM: <span id="nim">TI21240011</span> | Prodi: <span id="prodi">TEKNIK INFORMATIKA</span></div>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
