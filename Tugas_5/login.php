@@ -1,6 +1,6 @@
 <<?php
 session_start();
-include "config.php";
+include "koneksi.php";
 
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
@@ -96,3 +96,4 @@ if (isset($_POST['login'])) {
 
 </body>
 </html>
+
