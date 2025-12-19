@@ -1,9 +1,16 @@
 <?php
-$koneksi = mysqli_connect("localhost", "root", "ZelqyAdrian", "stilo");
+session_start();
+$host = "localhost";
+$user = "root";
+$pass = "root";
+$db   = "sika";
+$port = 3306;
 
-// Cek error
-if (mysqli_connect_errno()) {
-    die("Koneksi MariaDB gagal: " . mysqli_connect_error());
+// Membuat koneksi
+$koneksi = mysqli_connect($host, $user, $pass, $db, $port);
+
+// Cek koneksi
+if (!$koneksi) {
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
 ?>
-
